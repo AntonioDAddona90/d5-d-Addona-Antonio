@@ -1,0 +1,45 @@
+.container div{
+ display: inline-block; 
+ border-style: inset;
+ color: black;
+}
+.container div:nth-child(2)>span:last-of-type{
+display:inline block ; 
+border-style: dotted;
+}
+.container div:nth-child(odd)>span:nth-child(even){
+    color:green;
+}
+.container div::last-of-type{
+    color: blue;
+}
+.container div:nth-child(6)>span:not(last of :last-of-type){
+    color: gold;
+}
+.container div>:first-child{
+    position: absolute;
+    top: 60 px;
+    right: 30 px;
+}
+.container div>:nth-child(2){
+    position: absolute;
+    top: 60 px;
+    right: 30 px
+}
+.container div>:last-child>:last-child{
+   position: absolute; 
+   top: 60 px;
+   right:30 px
+}
+.container div>:last-child>:first-child{
+    position: absolute;
+    top: 60 px;
+    right: 30 px
+}
+.container div{
+    font-size: 0ch;
+}
+
+    
+
+    
